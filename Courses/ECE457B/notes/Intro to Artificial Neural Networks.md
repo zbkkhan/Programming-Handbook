@@ -2,16 +2,16 @@
 attachments: [Clipboard_2020-04-10-19-45-51.png, Clipboard_2020-04-10-20-13-08.png, Clipboard_2020-04-10-20-13-37.png, Clipboard_2020-04-10-20-27-30.png, Clipboard_2020-04-10-20-40-06.png, Clipboard_2020-04-10-20-41-13.png, Clipboard_2020-04-10-20-42-22.png, Clipboard_2020-04-10-20-43-22.png]
 title: Intro to Artificial Neural Networks
 created: '2020-04-10T23:40:32.953Z'
-modified: '2020-04-11T00:44:54.356Z'
+modified: '2020-04-11T15:54:26.904Z'
 ---
 
 # Intro to Artificial Neural Networks
 
 ## ANN Features
-![](@attachment/Clipboard_2020-04-10-19-45-51.png)
+![](../attachments/Clipboard_2020-04-10-19-45-51.png)
 
 ### Supervised Learning Algorithm
-![](@attachment/Clipboard_2020-04-10-20-13-08.png)
+![](../attachments/Clipboard_2020-04-10-20-13-08.png)
 1. Compute error between desired and actual outputs
 2. Use the error through a learning rule (e.g., gradient descent) to
 adjust the network’s connection weights
@@ -19,7 +19,7 @@ adjust the network’s connection weights
 4. Repeat steps 1 to 3 until maximum number of epochs is reached or an acceptable training error is reached 
 
 ### Unsupervised Learning Algorithm
-![](@attachment/Clipboard_2020-04-10-20-13-37.png)
+![](../attachments/Clipboard_2020-04-10-20-13-37.png)
 1. Training data set is presented at the input layer
 2. Output nodes are evaluated through a specific criterion
 3. Only weights connected to the winner node are adjusted
@@ -30,7 +30,7 @@ adjust the network’s connection weights
 
 ### Reinforcement Learning Algorithm
 
-![](@attachment/Clipboard_2020-04-10-20-27-30.png)
+![](../attachments/Clipboard_2020-04-10-20-27-30.png)
 
 > This method of learning attempts to perform weight adjustments through a qualitative and __not a quantitative measure__, much like how humans learn to ride a bike for example
 
@@ -51,10 +51,13 @@ output
 
 | Model Name | Topology |
 | ------ | --- |
-| McCulloch Pitt Model | ![](@attachment/Clipboard_2020-04-10-20-40-06.png)   |
-| Perceptron      | ![](@attachment/Clipboard_2020-04-10-20-41-13.png)   |
-|Adaline | ![](@attachment/Clipboard_2020-04-10-20-42-22.png) |
-|Madaline|![](@attachment/Clipboard_2020-04-10-20-43-22.png)|
+| McCulloch Pitt Model | ![](../attachments/Clipboard_2020-04-10-20-40-06.png)   |
+| Perceptron      | ![](../attachments/Clipboard_2020-04-10-20-41-13.png)   |
+|Adaline | ![](../attachments/Clipboard_2020-04-10-20-42-22.png) |
+|Madaline|![](../attachments/Clipboard_2020-04-10-20-43-22.png)|
+
+### Key Details
+- __McCulloch Pitt Model:__ No learning is performed in this model 
 
 
 
