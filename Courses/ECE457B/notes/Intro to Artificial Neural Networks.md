@@ -1,8 +1,8 @@
 ---
-attachments: [Clipboard_2020-04-10-19-45-51.png, Clipboard_2020-04-10-20-13-08.png, Clipboard_2020-04-10-20-13-37.png, Clipboard_2020-04-10-20-27-30.png, Clipboard_2020-04-10-20-40-06.png, Clipboard_2020-04-10-20-41-13.png, Clipboard_2020-04-10-20-42-22.png, Clipboard_2020-04-10-20-43-22.png]
+attachments: [Clipboard_2020-04-10-19-45-51.png, Clipboard_2020-04-10-20-13-08.png, Clipboard_2020-04-10-20-13-37.png, Clipboard_2020-04-10-20-27-30.png, Clipboard_2020-04-10-20-40-06.png, Clipboard_2020-04-10-20-41-13.png, Clipboard_2020-04-10-20-42-22.png, Clipboard_2020-04-10-20-43-22.png, Clipboard_2020-04-11-12-19-39.png, Clipboard_2020-04-11-12-24-30.png, Clipboard_2020-04-11-12-36-17.png, Clipboard_2020-04-11-12-37-35.png, Clipboard_2020-04-11-12-43-40.png, Clipboard_2020-04-11-12-45-39.png, Clipboard_2020-04-11-12-47-16.png]
 title: Intro to Artificial Neural Networks
 created: '2020-04-10T23:40:32.953Z'
-modified: '2020-04-11T16:06:51.633Z'
+modified: '2020-04-11T20:08:28.771Z'
 ---
 
 # Intro to Artificial Neural Networks
@@ -58,7 +58,28 @@ output
 |Madaline|<img src="../attachments/Clipboard_2020-04-10-20-43-22.png" alt="drawing" width="400"/>|
 
 ### Key Details
-- __McCulloch Pitt Model:__ No learning is performed in this model 
+- __McCulloch Pitt Model:__ 
+  - No learning is performed in this model 
+- __Perceptron:__ 
+  - Creates a lineraly seperable boundary between two classes through learning
+  - Uses a binary activation function
+  - _Perceptron convergence theorem:_ states that the model will converge in finite time given a linearly seperable problem statement
+  - _Perceptron learning rule:_ 
+    - Weight update: <img src="../attachments/Clipboard_2020-04-11-12-19-39.png" alt="drawing" width="200"/>
+    - Bias update: <img src="../attachments/Clipboard_2020-04-11-12-24-30.png" alt="drawing" width="240"/>
+  - __Cons:__ Suffers from a lack of generalization and inability to seperate non-seperable patterns
+- Adaline (Adaptive Linear Neuron):
+  - Better than perceptron in generalization and weight adaptation
+  - Uses the LMS (_Widrow-Hoff learning rule_):
+    - Weights are adjusted by an amount proportional to the gradient of the cumulative error of the network E(w) which is composed of a linear combiner
+    - Batch training [slow] (weights updated after cumulative training data (k)):
+      - <img src="../attachments/Clipboard_2020-04-11-12-36-17.png" alt="drawing" width="200"/>
+      - <img src="../attachments/Clipboard_2020-04-11-12-37-35.png" alt="drawing" width="300"/>
+    - On-line training (weights updated after each training data (k)):
+      - <img src="../attachments/Clipboard_2020-04-11-12-47-16.png" alt="drawing" width="200"/>
+      - <img src="../attachments/Clipboard_2020-04-11-12-43-40.png" alt="drawing" width="300"/>
+  - Madaline:
+    - A parallel implementation of multiple adaline structures used to learn non-linearly seperable classes  
 
 
 
